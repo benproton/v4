@@ -51,6 +51,7 @@ const StyledHeaderSection = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
+  gap: 16px;
 `;
 
 const Hero = () => {
@@ -69,8 +70,9 @@ const Hero = () => {
   const one = <h1>Hi, my name is</h1>;
   const two = (
     <StyledHeaderSection>
-      <h2 className="big-heading">Ben Holland</h2>{' '}
-      <span style={{ margin: '0 0 22px 16px', fontSize: 25 }}>aka Mad Red Coder.</span>
+      <h2 className="big-heading">
+        Ben Holland<span style={{ margin: '0', fontSize: 25 }}> (Mad Red Coder).</span>
+      </h2>{' '}
     </StyledHeaderSection>
   );
   const three = <h3 className="big-heading">I love to create things.</h3>;
